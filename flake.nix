@@ -19,7 +19,7 @@
         src = pkgs.fetchurl {
           url = "https://github.com/Alex313031/thorium/releases/download/M124.0.6367.218/Thorium_Browser_124.0.6367.218_AVX.AppImage";
           #sha256 = "sha256-2PJxnKzppjHrYQnGYYe1BG0075FwDdnjY0JI2X5AIvQ=";
-          sha256" = "sha256-xwFB5uPNAaM9JhulJHIdKgWuo+eO0CGCBqUupcs4rnA=";
+          sha256 = "sha256-xwFB5uPNAaM9JhulJHIdKgWuo+eO0CGCBqUupcs4rnA=";
         };
         appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
       in
