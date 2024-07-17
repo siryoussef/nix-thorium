@@ -15,10 +15,10 @@
       thorium-avx = let
         pkgs = import nixpkgs {system = "x86_64-linux";};
         name = "thorium-avx";
-        version = "122.0.6261.132 - 56";
+        version = "124.0.6367.218 - 59";
         src = pkgs.fetchurl {
-          url = "https://github.com/Alex313031/thorium/releases/download/M122.0.6261.132/thorium_browser_122.0.6261.132_AVX.AppImage";
-          sha256 = "sha256-2PJxnKzppjHrYQnGYYe1BG0075FwDdnjY0JI2X5AIvQ=";
+          url = "https://github.com/Alex313031/thorium/releases/download/M124.0.6367.218/Thorium_Browser_124.0.6367.218_AVX.AppImage";
+          #sha256 = "sha256-2PJxnKzppjHrYQnGYYe1BG0075FwDdnjY0JI2X5AIvQ=";
         };
         appimageContents = pkgs.appimageTools.extractType2 {inherit name src;};
       in
